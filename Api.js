@@ -55,7 +55,7 @@ app.post('/convertToPDF', (req, res) => {
   });
 });
 
-const port = 3000; // Replace this with your desired port number
+const port = process.env.PORT || 3000; // Replace this with your desired port number
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
